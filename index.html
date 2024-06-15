@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html
-  style="
+<html style="
     margin: 0;
     padding: 0;
     border: 0;
@@ -10,16 +9,45 @@
     box-sizing: border-box;
     margin: 0px;
     height: 100%;
-  "
->
-  <head>
-    <meta charset="utf-8" />
-    <style id="globals">
-      @import url("https://fonts.googleapis.com/css?family=Arimo:700,400");
-    </style>
-  </head>
-  <body
-    style="
+  ">
+
+<head>
+  <meta charset="utf-8" />
+  <style id="globals">
+    @import url("https://fonts.googleapis.com/css?family=Arimo:700,400");
+  </style>
+
+<style>
+  body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+  }
+  .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      background-color: #f0f0f0;
+  }
+  .box {
+      flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+      margin: 10px;
+      padding: 20px;
+      
+      color: white;
+      text-align: center;
+  }
+  @media (max-width: 600px) {
+      .box {
+          flex: 1 1 100%; /* Full width for smaller screens */
+      }
+  }
+</style>
+</head>
+
+<body style="
       margin: 0;
       padding: 0;
       border: 0;
@@ -30,14 +58,10 @@
       box-sizing: border-box;
       margin: 0px;
       height: 100%;
-    "
-  >
-    <table
-      border="0"
-      cellpadding="0"
-      cellspacing="0"
-      class="frame"
-      style="
+    ">
+
+<div class="box">
+  <table border="0" cellpadding="0" cellspacing="0" class="frame" style="
         border-collapse: separate;
         padding: 0;
         border: 0;
@@ -48,14 +72,11 @@
         background-color: #ffffff;
         width: 100%;
         height: 0px;
-      "
-    >
-      <tr style="vertical-align: top">
-        <td style="padding: 0px; width: 50%"></td>
-        <td align="center" style="position: relative; width: 600px; height: 2947px">
-          <div
-            class="overlap-wrapper"
-            style="
+      ">
+    <tr style="vertical-align: top">
+      <td style="padding: 0px; width: 50%"></td>
+      <td align="center" style="position: relative; width: 600px; height: 2947px">
+        <div class="overlap-wrapper" style="
               margin: 0;
               padding: 0;
               border: 0;
@@ -68,11 +89,8 @@
               width: 600px;
               height: 2947px;
               text-align: left;
-            "
-          >
-            <div
-              class="overlap"
-              style="
+            ">
+          <div class="overlap" style="
                 margin: 0;
                 padding: 0;
                 border: 0;
@@ -86,11 +104,8 @@
                 top: -31px;
                 left: -17px;
                 background: linear-gradient(180deg, rgb(217, 217, 217) 0%, rgb(255, 255, 255) 100%);
-              "
-            >
-              <div
-                class="overlap-group"
-                style="
+              ">
+            <div class="overlap-group" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -103,11 +118,8 @@
                   height: 752px;
                   top: 175px;
                   left: 40px;
-                "
-              >
-                <div
-                  class="rectangle"
-                  style="
+                ">
+              <div class="rectangle" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -121,12 +133,9 @@
                     top: 0;
                     left: 15px;
                     background: linear-gradient(180deg, rgb(8, 47, 73) 0%, rgb(35, 78, 112) 88%);
-                  "
-                ></div>
-                <img
-                  class="settings"
-                  src="img/settings-6-1.png"
-                  style="
+                  "></div>
+              <img class="settings" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/settings-6-1.png"
+                style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -141,12 +150,8 @@
                     position: absolute;
                     mix-blend-mode: soft-light;
                     object-fit: cover;
-                  "
-                />
-                <img
-                  class="img"
-                  src="img/settings-6-2.png"
-                  style="
+                  " />
+              <img class="img" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/settings-6-2.png" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -161,12 +166,9 @@
                     position: absolute;
                     mix-blend-mode: soft-light;
                     object-fit: cover;
-                  "
-                />
-                <img
-                  class="settings-2"
-                  src="img/settings-6-3.png"
-                  style="
+                  " />
+              <img class="settings-2" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/settings-6-3.png"
+                style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -181,12 +183,8 @@
                     position: absolute;
                     mix-blend-mode: soft-light;
                     object-fit: cover;
-                  "
-                />
-                <img
-                  class="sheet"
-                  src="img/sheet.png"
-                  style="
+                  " />
+              <img class="sheet" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/sheet.png" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -199,11 +197,8 @@
                     height: 270px;
                     top: 222px;
                     left: 138px;
-                  "
-                />
-                <div
-                  class="div"
-                  style="
+                  " />
+              <div class="div" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -217,11 +212,8 @@
                     top: 445px;
                     left: 0;
                     background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "
-                ></div>
-                <p
-                  class="special-offer-no"
-                  style="
+                  "></div>
+              <p class="special-offer-no" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -239,14 +231,11 @@
                     text-align: center;
                     letter-spacing: 0;
                     line-height: 36px;
-                  "
-                >
-                  Special Offer: <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />No Monthly
-                  Fees All Summer Long!
-                </p>
-                <p
-                  class="summer-promotional"
-                  style="
+                  ">
+                Special Offer: <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />No Monthly
+                Fees All Summer Long!
+              </p>
+              <p class="summer-promotional" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -265,14 +254,11 @@
                     text-align: center;
                     letter-spacing: 0;
                     line-height: 28px;
-                  "
-                >
-                  Summer Promotional Campaign
-                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />for Monjur's
-                </p>
-                <div
-                  class="text-wrapper"
-                  style="
+                  ">
+                Summer Promotional Campaign
+                <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />for Monjur's
+              </p>
+              <div class="text-wrapper" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -291,13 +277,10 @@
                     letter-spacing: 0;
                     line-height: normal;
                     white-space: nowrap;
-                  "
-                >
-                  CONTRACTS-AS-A-SERVICE
-                </div>
-                <div
-                  class="text-wrapper-2"
-                  style="
+                  ">
+                CONTRACTS-AS-A-SERVICE
+              </div>
+              <div class="text-wrapper-2" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -317,14 +300,11 @@
                     letter-spacing: 0;
                     line-height: normal;
                     white-space: nowrap;
-                  "
-                >
-                  SOLUTIONS
-                </div>
-                <img
-                  class="rectangle-2"
-                  src="img/rectangle-38.png"
-                  style="
+                  ">
+                SOLUTIONS
+              </div>
+              <img class="rectangle-2"
+                src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/rectangle-38.png" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -337,12 +317,9 @@
                     height: 19px;
                     top: 464px;
                     left: 156px;
-                  "
-                />
-                <img
-                  class="rectangle-3"
-                  src="img/rectangle-39.png"
-                  style="
+                  " />
+              <img class="rectangle-3"
+                src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/rectangle-39.png" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -355,12 +332,8 @@
                     height: 19px;
                     top: 464px;
                     left: 347px;
-                  "
-                />
-                <img
-                  class="group"
-                  src="img/group-8.png"
-                  style="
+                  " />
+              <img class="group" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/group-8.png" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -373,11 +346,8 @@
                     height: 217px;
                     top: 266px;
                     left: 112px;
-                  "
-                />
-                <p
-                  class="p"
-                  style="
+                  " />
+              <p class="p" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -396,16 +366,13 @@
                     text-align: center;
                     letter-spacing: 0;
                     line-height: 28px;
-                  "
-                >
-                  Monjur is excited to announce our exclusive summer promotional campaign for IT managed services
-                  providers. Sign up for our Contracts-as-a-Service solutions and enjoy comprehensive legal protections
-                  without any monthly fees for the entire summer.
-                </p>
-              </div>
-              <div
-                class="overlap-2"
-                style="
+                  ">
+                Monjur is excited to announce our exclusive summer promotional campaign for IT managed services
+                providers. Sign up for our Contracts-as-a-Service solutions and enjoy comprehensive legal protections
+                without any monthly fees for the entire summer.
+              </p>
+            </div>
+            <div class="overlap-2" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -418,11 +385,8 @@
                   height: 327px;
                   top: 2107px;
                   left: 40px;
-                "
-              >
-                <div
-                  class="rectangle-4"
-                  style="
+                ">
+              <div class="rectangle-4" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -436,11 +400,8 @@
                     top: 0;
                     left: 15px;
                     background: linear-gradient(180deg, rgb(8, 47, 73) 0%, rgb(35, 78, 112) 100%);
-                  "
-                ></div>
-                <div
-                  class="rectangle-5"
-                  style="
+                  "></div>
+              <div class="rectangle-5" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -454,11 +415,8 @@
                     top: 25px;
                     left: 0;
                     background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "
-                ></div>
-                <p
-                  class="take-advantage-of"
-                  style="
+                  "></div>
+              <p class="take-advantage-of" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -476,11 +434,8 @@
                     font-size: 22px;
                     letter-spacing: 0;
                     line-height: 32px;
-                  "
-                >
-                  <span
-                    class="span"
-                    style="
+                  ">
+                <span class="span" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -489,12 +444,9 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       color: #ffffff;
-                    "
-                    >Take advantage of this incredible offer and
-                  </span>
-                  <span
-                    class="text-wrapper-3"
-                    style="
+                    ">Take advantage of this incredible offer and
+                </span>
+                <span class="text-wrapper-3" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -504,12 +456,9 @@
                       box-sizing: border-box;
                       font-weight: 700;
                       color: #e89611;
-                    "
-                    >join the Monjur platform
-                  </span>
-                  <span
-                    class="span"
-                    style="
+                    ">join the Monjur platform
+                </span>
+                <span class="span" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -518,15 +467,12 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       color: #ffffff;
-                    "
-                    >with minimal risk. By the time you start making monthly payments, you'll already be benefiting from
-                    the comprehensive legal protections our platform provides.</span
-                  >
-                </p>
-                <img
-                  class="megaphone"
-                  src="img/megaphone.png"
-                  style="
+                    ">with minimal risk. By the time you start making monthly payments, you'll already be benefiting
+                  from
+                  the comprehensive legal protections our platform provides.</span>
+              </p>
+              <img class="megaphone" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/megaphone.png"
+                style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -539,12 +485,9 @@
                     height: 149px;
                     top: 82px;
                     left: 7px;
-                  "
-                />
-              </div>
-              <div
-                class="for-more-information-wrapper"
-                style="
+                  " />
+            </div>
+            <div class="for-more-information-wrapper" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -558,11 +501,8 @@
                   top: 2640px;
                   left: 55px;
                   background: linear-gradient(180deg, rgb(8, 47, 73) 0%, rgb(35, 78, 112) 100%);
-                "
-              >
-                <p
-                  class="for-more-information"
-                  style="
+                ">
+              <p class="for-more-information" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -580,16 +520,13 @@
                     text-align: center;
                     letter-spacing: 0;
                     line-height: 32px;
-                  "
-                >
-                  For more information and to enroll,
-                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />visit our website or contact
-                  our sales team.
-                </p>
-              </div>
-              <div
-                class="overlap-3"
-                style="
+                  ">
+                For more information and to enroll,
+                <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />visit our website or contact
+                our sales team.
+              </p>
+            </div>
+            <div class="overlap-3" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -602,11 +539,8 @@
                   height: 184px;
                   top: 1199px;
                   left: 322px;
-                "
-              >
-                <div
-                  class="rectangle-6"
-                  style="
+                ">
+              <div class="rectangle-6" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -620,11 +554,8 @@
                     top: 31px;
                     left: 0;
                     background-color: #082f49;
-                  "
-                ></div>
-                <div
-                  class="rectangle-7"
-                  style="
+                  "></div>
+              <div class="rectangle-7" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -638,11 +569,8 @@
                     top: 0;
                     left: 40px;
                     background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "
-                ></div>
-                <p
-                  class="agreement-term"
-                  style="
+                  "></div>
+              <p class="agreement-term" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -660,11 +588,8 @@
                     font-size: 22px;
                     letter-spacing: 0;
                     line-height: 30px;
-                  "
-                >
-                  <span
-                    class="text-wrapper-4"
-                    style="
+                  ">
+                <span class="text-wrapper-4" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -673,12 +598,8 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-weight: 700;
-                    "
-                    >Agreement Term:</span
-                  >
-                  <span
-                    class="text-wrapper-5"
-                    style="
+                    ">Agreement Term:</span>
+                <span class="text-wrapper-5" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -692,12 +613,8 @@
                       font-size: 22px;
                       letter-spacing: 0;
                       line-height: 30px;
-                    "
-                    > <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box"
-                  /></span>
-                  <span
-                    class="text-wrapper-6"
-                    style="
+                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
+                <span class="text-wrapper-6" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -706,14 +623,10 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-size: 18px;
-                    "
-                    >36 months</span
-                  >
-                </p>
-                <img
-                  class="signature"
-                  src="img/signature-1.png"
-                  style="
+                    ">36 months</span>
+              </p>
+              <img class="signature" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/signature-1.png"
+                style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -727,12 +640,9 @@
                     top: 12px;
                     left: 52px;
                     object-fit: cover;
-                  "
-                />
-              </div>
-              <div
-                class="overlap-4"
-                style="
+                  " />
+            </div>
+            <div class="overlap-4" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -745,11 +655,8 @@
                   height: 153px;
                   top: 1393px;
                   left: 40px;
-                "
-              >
-                <div
-                  class="rectangle-8"
-                  style="
+                ">
+              <div class="rectangle-8" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -763,11 +670,8 @@
                     top: 0;
                     left: 15px;
                     background-color: #082f49;
-                  "
-                ></div>
-                <div
-                  class="rectangle-9"
-                  style="
+                  "></div>
+              <div class="rectangle-9" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -781,11 +685,8 @@
                     top: 21px;
                     left: 0;
                     background: linear-gradient(180deg, rgb(8, 47, 73) 0%, rgb(35, 78, 112) 100%);
-                  "
-                ></div>
-                <p
-                  class="monthly-fees-no"
-                  style="
+                  "></div>
+              <p class="monthly-fees-no" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -803,11 +704,8 @@
                     font-size: 22px;
                     letter-spacing: 0;
                     line-height: 30px;
-                  "
-                >
-                  <span
-                    class="text-wrapper-4"
-                    style="
+                  ">
+                <span class="text-wrapper-4" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -816,12 +714,8 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-weight: 700;
-                    "
-                    >Monthly Fees:</span
-                  >
-                  <span
-                    class="text-wrapper-5"
-                    style="
+                    ">Monthly Fees:</span>
+                <span class="text-wrapper-5" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -835,12 +729,8 @@
                       font-size: 22px;
                       letter-spacing: 0;
                       line-height: 30px;
-                    "
-                    > <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box"
-                  /></span>
-                  <span
-                    class="text-wrapper-6"
-                    style="
+                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
+                <span class="text-wrapper-6" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -849,15 +739,11 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-size: 18px;
-                    "
-                    >No monthly fees during the summer. The earlier
-                    <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />you sign up, the more free
-                    months you receive!</span
-                  >
-                </p>
-                <div
-                  class="overlap-group-wrapper"
-                  style="
+                    ">No monthly fees during the summer. The earlier
+                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />you sign up, the more free
+                  months you receive!</span>
+              </p>
+              <div class="overlap-group-wrapper" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -870,11 +756,8 @@
                     height: 34px;
                     top: 57px;
                     left: 39px;
-                  "
-                >
-                  <div
-                    class="overlap-5"
-                    style="
+                  ">
+                <div class="overlap-5" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -887,12 +770,9 @@
                       height: 37px;
                       top: -1px;
                       left: -1px;
-                    "
-                  >
-                    <img
-                      class="rectangle-10"
-                      src="img/rectangle-30-1.png"
-                      style="
+                    ">
+                  <img class="rectangle-10"
+                    src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/rectangle-30-1.png" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -905,12 +785,9 @@
                         height: 33px;
                         top: 4px;
                         left: 0;
-                      "
-                    />
-                    <img
-                      class="vector"
-                      src="img/vector-1-1.png"
-                      style="
+                      " />
+                  <img class="vector" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-1-1.png"
+                    style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -923,12 +800,9 @@
                         width: 3px;
                         height: 9px;
                         top: 0;
-                      "
-                    />
-                    <img
-                      class="vector-2"
-                      src="img/vector-2-1.png"
-                      style="
+                      " />
+                  <img class="vector-2" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-2-1.png"
+                    style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -941,12 +815,9 @@
                         width: 3px;
                         height: 9px;
                         top: 0;
-                      "
-                    />
-                    <img
-                      class="vector-3"
-                      src="img/vector-3-1.png"
-                      style="
+                      " />
+                  <img class="vector-3" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-3-1.png"
+                    style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -959,11 +830,8 @@
                         width: 3px;
                         height: 9px;
                         top: 0;
-                      "
-                    />
-                    <div
-                      class="ellipse"
-                      style="
+                      " />
+                  <div class="ellipse" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -979,11 +847,8 @@
                         border-radius: 10.35px;
                         border: 2.8px solid;
                         border-color: #ffffff;
-                      "
-                    ></div>
-                    <div
-                      class="ellipse-2"
-                      style="
+                      "></div>
+                  <div class="ellipse-2" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -998,11 +863,8 @@
                         left: 8px;
                         background-color: #ffffff;
                         border-radius: 1.34px;
-                      "
-                    ></div>
-                    <div
-                      class="ellipse-3"
-                      style="
+                      "></div>
+                  <div class="ellipse-3" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1017,11 +879,8 @@
                         left: 8px;
                         background-color: #ffffff;
                         border-radius: 1.34px;
-                      "
-                    ></div>
-                    <div
-                      class="ellipse-4"
-                      style="
+                      "></div>
+                  <div class="ellipse-4" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1036,11 +895,8 @@
                         left: 8px;
                         background-color: #ffffff;
                         border-radius: 1.34px;
-                      "
-                    ></div>
-                    <div
-                      class="ellipse-5"
-                      style="
+                      "></div>
+                  <div class="ellipse-5" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1055,11 +911,8 @@
                         left: 13px;
                         background-color: #ffffff;
                         border-radius: 1.34px;
-                      "
-                    ></div>
-                    <div
-                      class="text-wrapper-7"
-                      style="
+                      "></div>
+                  <div class="text-wrapper-7" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1079,16 +932,13 @@
                         letter-spacing: 0;
                         line-height: normal;
                         white-space: nowrap;
-                      "
-                    >
-                      $
-                    </div>
+                      ">
+                    $
                   </div>
                 </div>
               </div>
-              <div
-                class="overlap-6"
-                style="
+            </div>
+            <div class="overlap-6" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -1101,11 +951,8 @@
                   height: 153px;
                   top: 1556px;
                   left: 40px;
-                "
-              >
-                <div
-                  class="rectangle-11"
-                  style="
+                ">
+              <div class="rectangle-11" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1119,11 +966,8 @@
                     top: 0;
                     left: 15px;
                     background-color: #234e70;
-                  "
-                ></div>
-                <div
-                  class="rectangle-12"
-                  style="
+                  "></div>
+              <div class="rectangle-12" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1137,11 +981,8 @@
                     top: 20px;
                     left: 0;
                     background: linear-gradient(180deg, rgb(35, 78, 112) 0%, rgb(55.18, 121.67, 174.25) 100%);
-                  "
-                ></div>
-                <p
-                  class="one-time-setup-fee"
-                  style="
+                  "></div>
+              <p class="one-time-setup-fee" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1159,11 +1000,8 @@
                     font-size: 22px;
                     letter-spacing: 0;
                     line-height: 30px;
-                  "
-                >
-                  <span
-                    class="text-wrapper-4"
-                    style="
+                  ">
+                <span class="text-wrapper-4" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1172,12 +1010,8 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-weight: 700;
-                    "
-                    >One-Time Setup Fee:</span
-                  >
-                  <span
-                    class="text-wrapper-5"
-                    style="
+                    ">One-Time Setup Fee:</span>
+                <span class="text-wrapper-5" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1191,12 +1025,8 @@
                       font-size: 22px;
                       letter-spacing: 0;
                       line-height: 30px;
-                    "
-                    > <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box"
-                  /></span>
-                  <span
-                    class="text-wrapper-6"
-                    style="
+                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
+                <span class="text-wrapper-6" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1205,41 +1035,9 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-size: 18px;
-                    "
-                    >Essential Tier:
-                  </span>
-                  <span
-                    class="text-wrapper-8"
-                    style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                      font-size: 18px;
-                    "
-                    >$299<br style="-webkit-font-smoothing: antialiased; box-sizing: border-box"
-                  /></span>
-                  <span
-                    class="text-wrapper-6"
-                    style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-size: 18px;
-                    "
-                    >Standard Tier:
-                  </span>
-                  <span
-                    class="text-wrapper-8"
-                    style="
+                    ">Essential Tier:
+                </span>
+                <span class="text-wrapper-8" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1249,14 +1047,32 @@
                       box-sizing: border-box;
                       font-weight: 700;
                       font-size: 18px;
-                    "
-                    >$498</span
-                  >
-                </p>
-                <img
-                  class="calendar"
-                  src="img/calendar-6-1.png"
-                  style="
+                    ">$299<br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
+                <span class="text-wrapper-6" style="
+                      margin: 0;
+                      padding: 0;
+                      border: 0;
+                      font: inherit;
+                      font-size: 100%;
+                      -webkit-font-smoothing: antialiased;
+                      box-sizing: border-box;
+                      font-size: 18px;
+                    ">Standard Tier:
+                </span>
+                <span class="text-wrapper-8" style="
+                      margin: 0;
+                      padding: 0;
+                      border: 0;
+                      font: inherit;
+                      font-size: 100%;
+                      -webkit-font-smoothing: antialiased;
+                      box-sizing: border-box;
+                      font-weight: 700;
+                      font-size: 18px;
+                    ">$498</span>
+              </p>
+              <img class="calendar" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/calendar-6-1.png"
+                style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1270,12 +1086,9 @@
                     top: 60px;
                     left: 39px;
                     object-fit: cover;
-                  "
-                />
-              </div>
-              <div
-                class="overlap-7"
-                style="
+                  " />
+            </div>
+            <div class="overlap-7" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -1288,11 +1101,8 @@
                   height: 153px;
                   top: 1719px;
                   left: 40px;
-                "
-              >
-                <div
-                  class="rectangle-13"
-                  style="
+                ">
+              <div class="rectangle-13" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1306,11 +1116,8 @@
                     top: 0;
                     left: 15px;
                     background-color: #5c6670;
-                  "
-                ></div>
-                <div
-                  class="rectangle-14"
-                  style="
+                  "></div>
+              <div class="rectangle-14" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1324,11 +1131,8 @@
                     top: 22px;
                     left: 0;
                     background: linear-gradient(180deg, rgb(92, 102, 112) 0%, rgb(166, 174.37, 182.75) 100%);
-                  "
-                ></div>
-                <p
-                  class="monthly-payments"
-                  style="
+                  "></div>
+              <p class="monthly-payments" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1346,11 +1150,8 @@
                     font-size: 22px;
                     letter-spacing: 0;
                     line-height: 30px;
-                  "
-                >
-                  <span
-                    class="text-wrapper-4"
-                    style="
+                  ">
+                <span class="text-wrapper-4" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1359,12 +1160,8 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-weight: 700;
-                    "
-                    >Monthly Payments:</span
-                  >
-                  <span
-                    class="text-wrapper-5"
-                    style="
+                    ">Monthly Payments:</span>
+                <span class="text-wrapper-5" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1378,12 +1175,8 @@
                       font-size: 22px;
                       letter-spacing: 0;
                       line-height: 30px;
-                    "
-                    > <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box"
-                  /></span>
-                  <span
-                    class="text-wrapper-6"
-                    style="
+                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
+                <span class="text-wrapper-6" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1392,15 +1185,11 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-size: 18px;
-                    "
-                    >Begin after Labor Day, with 33 monthly payments
-                    <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />starting the day after
-                    Labor Day.</span
-                  >
-                </p>
-                <div
-                  class="div-wrapper"
-                  style="
+                    ">Begin after Labor Day, with 33 monthly payments
+                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />starting the day after
+                  Labor Day.</span>
+              </p>
+              <div class="div-wrapper" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1413,11 +1202,8 @@
                     height: 34px;
                     top: 61px;
                     left: 38px;
-                  "
-                >
-                  <div
-                    class="overlap-5"
-                    style="
+                  ">
+                <div class="overlap-5" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1430,12 +1216,9 @@
                       height: 37px;
                       top: -1px;
                       left: -1px;
-                    "
-                  >
-                    <img
-                      class="rectangle-10"
-                      src="img/rectangle-30-1.png"
-                      style="
+                    ">
+                  <img class="rectangle-10"
+                    src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/rectangle-30-1.png" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1448,12 +1231,9 @@
                         height: 33px;
                         top: 4px;
                         left: 0;
-                      "
-                    />
-                    <img
-                      class="vector"
-                      src="img/vector-1-1.png"
-                      style="
+                      " />
+                  <img class="vector" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-1-1.png"
+                    style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1466,12 +1246,9 @@
                         width: 3px;
                         height: 9px;
                         top: 0;
-                      "
-                    />
-                    <img
-                      class="vector-2"
-                      src="img/vector-2-1.png"
-                      style="
+                      " />
+                  <img class="vector-2" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-2-1.png"
+                    style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1484,12 +1261,9 @@
                         width: 3px;
                         height: 9px;
                         top: 0;
-                      "
-                    />
-                    <img
-                      class="vector-3"
-                      src="img/vector-3-1.png"
-                      style="
+                      " />
+                  <img class="vector-3" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-3-1.png"
+                    style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1502,11 +1276,8 @@
                         width: 3px;
                         height: 9px;
                         top: 0;
-                      "
-                    />
-                    <div
-                      class="ellipse"
-                      style="
+                      " />
+                  <div class="ellipse" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1522,11 +1293,8 @@
                         border-radius: 10.35px;
                         border: 2.8px solid;
                         border-color: #ffffff;
-                      "
-                    ></div>
-                    <div
-                      class="ellipse-2"
-                      style="
+                      "></div>
+                  <div class="ellipse-2" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1541,11 +1309,8 @@
                         left: 8px;
                         background-color: #ffffff;
                         border-radius: 1.34px;
-                      "
-                    ></div>
-                    <div
-                      class="ellipse-3"
-                      style="
+                      "></div>
+                  <div class="ellipse-3" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1560,11 +1325,8 @@
                         left: 8px;
                         background-color: #ffffff;
                         border-radius: 1.34px;
-                      "
-                    ></div>
-                    <div
-                      class="ellipse-4"
-                      style="
+                      "></div>
+                  <div class="ellipse-4" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1579,11 +1341,8 @@
                         left: 8px;
                         background-color: #ffffff;
                         border-radius: 1.34px;
-                      "
-                    ></div>
-                    <div
-                      class="ellipse-5"
-                      style="
+                      "></div>
+                  <div class="ellipse-5" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1598,11 +1357,8 @@
                         left: 13px;
                         background-color: #ffffff;
                         border-radius: 1.34px;
-                      "
-                    ></div>
-                    <div
-                      class="text-wrapper-7"
-                      style="
+                      "></div>
+                  <div class="text-wrapper-7" style="
                         margin: 0;
                         padding: 0;
                         border: 0;
@@ -1622,16 +1378,13 @@
                         letter-spacing: 0;
                         line-height: normal;
                         white-space: nowrap;
-                      "
-                    >
-                      $
-                    </div>
+                      ">
+                    $
                   </div>
                 </div>
               </div>
-              <div
-                class="overlap-8"
-                style="
+            </div>
+            <div class="overlap-8" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -1644,11 +1397,8 @@
                   height: 153px;
                   top: 1882px;
                   left: 40px;
-                "
-              >
-                <div
-                  class="rectangle-15"
-                  style="
+                ">
+              <div class="rectangle-15" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1662,11 +1412,8 @@
                     top: 0;
                     left: 15px;
                     background-color: #e89611;
-                  "
-                ></div>
-                <div
-                  class="rectangle-16"
-                  style="
+                  "></div>
+              <div class="rectangle-16" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1680,11 +1427,8 @@
                     top: 22px;
                     left: 0;
                     background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(255, 216.03, 115.81) 100%);
-                  "
-                ></div>
-                <p
-                  class="money-back-guarantee"
-                  style="
+                  "></div>
+              <p class="money-back-guarantee" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1702,11 +1446,8 @@
                     font-size: 22px;
                     letter-spacing: 0;
                     line-height: 30px;
-                  "
-                >
-                  <span
-                    class="text-wrapper-4"
-                    style="
+                  ">
+                <span class="text-wrapper-4" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1715,12 +1456,8 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-weight: 700;
-                    "
-                    >Money-Back Guarantee:</span
-                  >
-                  <span
-                    class="text-wrapper-5"
-                    style="
+                    ">Money-Back Guarantee:</span>
+                <span class="text-wrapper-5" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1734,12 +1471,8 @@
                       font-size: 22px;
                       letter-spacing: 0;
                       line-height: 30px;
-                    "
-                    > <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box"
-                  /></span>
-                  <span
-                    class="text-wrapper-6"
-                    style="
+                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
+                <span class="text-wrapper-6" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1748,16 +1481,11 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-size: 18px;
-                    "
-                    >Not satisfied within the first 90 days? You can
-                    <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />cancel, no questions
-                    asked.</span
-                  >
-                </p>
-                <img
-                  class="refund"
-                  src="img/refund-1.png"
-                  style="
+                    ">Not satisfied within the first 90 days? You can
+                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />cancel, no questions
+                  asked.</span>
+              </p>
+              <img class="refund" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/refund-1.png" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1771,12 +1499,9 @@
                     top: 61px;
                     left: 35px;
                     object-fit: cover;
-                  "
-                />
-              </div>
-              <div
-                class="overlap-9"
-                style="
+                  " />
+            </div>
+            <div class="overlap-9" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -1789,11 +1514,8 @@
                   height: 184px;
                   top: 1199px;
                   left: 55px;
-                "
-              >
-                <div
-                  class="rectangle-6"
-                  style="
+                ">
+              <div class="rectangle-6" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1807,11 +1529,8 @@
                     top: 31px;
                     left: 0;
                     background-color: #082f49;
-                  "
-                ></div>
-                <div
-                  class="rectangle-17"
-                  style="
+                  "></div>
+              <div class="rectangle-17" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1825,11 +1544,8 @@
                     top: 0;
                     left: 43px;
                     background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "
-                ></div>
-                <p
-                  class="promotion-period"
-                  style="
+                  "></div>
+              <p class="promotion-period" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1847,11 +1563,8 @@
                     font-size: 22px;
                     letter-spacing: 0;
                     line-height: 30px;
-                  "
-                >
-                  <span
-                    class="text-wrapper-4"
-                    style="
+                  ">
+                <span class="text-wrapper-4" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1860,12 +1573,8 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-weight: 700;
-                    "
-                    >Promotion Period:</span
-                  >
-                  <span
-                    class="text-wrapper-6"
-                    style="
+                    ">Promotion Period:</span>
+                <span class="text-wrapper-6" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1874,15 +1583,11 @@
                       -webkit-font-smoothing: antialiased;
                       box-sizing: border-box;
                       font-size: 18px;
-                    "
-                    > <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />Memorial Day through
-                    <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />Labor Day</span
-                  >
-                </p>
-                <img
-                  class="calendar-2"
-                  src="img/calendar-5-1.png"
-                  style="
+                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />Memorial Day through
+                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />Labor Day</span>
+              </p>
+              <img class="calendar-2" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/calendar-5-1.png"
+                style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1896,12 +1601,9 @@
                     top: 11px;
                     left: 54px;
                     object-fit: cover;
-                  "
-                />
-              </div>
-              <div
-                class="rectangle-18"
-                style="
+                  " />
+            </div>
+            <div class="rectangle-18" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -1915,12 +1617,9 @@
                   top: 2752px;
                   left: 55px;
                   background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                "
-              ></div>
-              <img
-                class="monjur-logo"
-                src="img/monjur-logo-1.png"
-                style="
+                "></div>
+            <img class="monjur-logo" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/monjur-logo-1.png"
+              style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -1934,11 +1633,10 @@
                   top: 53px;
                   left: 47px;
                   object-fit: cover;
-                "
-              />
-              <div
-                class="group-2"
-                style="
+                " />
+
+                <a href="https://monjur.com" target="_blank">
+            <div class="group-2" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -1951,11 +1649,8 @@
                   height: 48px;
                   top: 83px;
                   left: 442px;
-                "
-              >
-                <div
-                  class="overlap-group-2"
-                  style="
+                ">
+              <div class="overlap-group-2" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -1967,11 +1662,8 @@
                     width: 137px;
                     height: 48px;
                     background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "
-                >
-                  <div
-                    class="text-wrapper-9"
-                    style="
+                  ">
+                <div class="text-wrapper-9" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -1990,15 +1682,14 @@
                       letter-spacing: 0;
                       line-height: 36px;
                       white-space: nowrap;
-                    "
-                  >
-                    VISIT SITE
-                  </div>
+                    ">
+                  VISIT SITE
                 </div>
               </div>
-              <div
-                class="overlap-10"
-                style="
+            </div></a>
+
+            <a href="https://monjur.com/request-a-demo/" target="_blank">
+            <div class="overlap-10" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -2012,11 +1703,8 @@
                   top: 979px;
                   left: 202px;
                   background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                "
-              >
-                <div
-                  class="text-wrapper-10"
-                  style="
+                ">
+              <div class="text-wrapper-10" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -2035,14 +1723,12 @@
                     letter-spacing: 0;
                     line-height: 36px;
                     white-space: nowrap;
-                  "
-                >
-                  SAVE ON MONJUR
-                </div>
+                  ">
+                SAVE ON MONJUR
               </div>
-              <p
-                class="text-wrapper-11"
-                style="
+            </div>
+          </a>
+            <p class="text-wrapper-11" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -2061,13 +1747,10 @@
                   text-align: center;
                   letter-spacing: 0;
                   line-height: 40px;
-                "
-              >
-                Here are the key details of this limited-time offer:
-              </p>
-              <p
-                class="monjur-reserve"
-                style="
+                ">
+              Here are the key details of this limited-time offer:
+            </p>
+            <p class="monjur-reserve" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -2085,11 +1768,8 @@
                   text-align: center;
                   letter-spacing: 0;
                   line-height: 22px;
-                "
-              >
-                <span
-                  class="text-wrapper-12"
-                  style="
+                ">
+              <span class="text-wrapper-12" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -2098,13 +1778,9 @@
                     -webkit-font-smoothing: antialiased;
                     box-sizing: border-box;
                     color: #082f49;
-                  "
-                  >Monjur, 550 Reserve Street, Ste. 190 PMB 80, Southlake, Texas 76092, United States<br
-                    style="-webkit-font-smoothing: antialiased; box-sizing: border-box"
-                /></span>
-                <span
-                  class="text-wrapper-13"
-                  style="
+                  ">Monjur, 550 Reserve Street, Ste. 190 PMB 80, Southlake, Texas 76092, United States<br
+                  style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
+              <span class="text-wrapper-13" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -2113,13 +1789,20 @@
                     -webkit-font-smoothing: antialiased;
                     box-sizing: border-box;
                     color: #234e70;
-                  "
-                  >Unsubscribe    Manage preferences</span
-                >
-              </p>
-              <div
-                class="group-3"
-                style="
+                  "> <a class="hubspot-mergetag" data-unsubscribe="true" target="_blank" style="mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:12px; color:#1274e5; font-weight:normal; text-decoration:underline; font-style:normal" data-hs-link-id="0" href="https://hs-22570801.s.hubspotemail.net/hs/preferences-center/en/direct?data=W2nXS-N30h-G8W1V1cqy1X9LTDW3V_rL64tgMp0W2FLfSW23kfv-W2-bmlf3VJfkKW30jNfk3f_7w4W383tqK3ZsJ_tW4hGkml2HZ991W1Svt8J4p9mFQW2FYsRx2Tv0WYW329yTV49JGsqW1W_PX-2RyWjFW2-MhGZ2vXJ4zW2CWgBl3j5HdNW3R2kY92PkfXqW3BPZ_v2WpC9XW41D4VM3K8MctW3GVz4W30jP13W2WKfVR36pbVBW21kZgB3g999rW3h-vny24RPlFW2HqpsC211bcMW3NSgrM2KzWk2W1BgV1q4chLBtW2MTyp32RN-ptW3_rdPz3djShqW3LGyrN3B_QjkW4mnm_V2vzywWW36tlLN2zDT7TW3NPnwZ4hmxt4W32Gj2m3ZCyTmW1V1C6s2r8-y5W2p6L6Q2-p-PGW21nT7M2Wrc_6f45P8FX04">
+                    Unsubscribe 
+                  
+                  </a>
+                  &nbsp;  &nbsp;
+                  <a class="hubspot-mergetag" data-unsubscribe="true" target="_blank" style="mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:12px; color:#1274e5; font-weight:normal; text-decoration:underline; font-style:normal" data-hs-link-id="0" href="https://hs-22570801.s.hubspotemail.net/hs/preferences-center/en/page?data=W2nXS-N30h-GfW2-syw332hSbrW1XpsSG3BV_xyW2sN8s643qpz3W1Z0TPg3W2Qz0W36d5qP366H6cW3FgcRJ2RHCZNW2p9Cl-49M6bXW3_Nck92zTPmjW4mCtDb239NSWW1NwFSd30mjnkW32gzZS4hKDn-W1_kLwC2RvcDZW2t50712RRWTZW3JGkP94htKZgW2t2wXs3gwWsrW2PLLK62nT_XnW2PMWF_2WFVgHW2PRFYm2-ljLFW1NCDS73SzMJmW1Nppbz2qWPM0W3NDD7S3Vx4sCW2Yt9891Qm6stW4mGMqZ3_YP3JW1_4qqb1LnqgQW2Ry6863GZjxZW1Sx5YB3JKB1JW34mP7D2pbq7JW4kHqv-2HDHnmW47sVfC2t2-BfW3W14pF2q-zp-W2RxGzN3jgNN-W328LVF4frvq0W2w5b2X36zqMyf3QJ-Bw04">
+                  Manage preferences
+                </a>
+               </span>
+            </p>
+
+            
+            <a href="https://monjur.com" target="_blank">
+            <div class="group-3" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -2132,11 +1815,8 @@
                   height: 48px;
                   top: 2803px;
                   left: 202px;
-                "
-              >
-                <div
-                  class="overlap-11"
-                  style="
+                ">
+              <div class="overlap-11" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -2148,11 +1828,8 @@
                     width: 214px;
                     height: 48px;
                     background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "
-                >
-                  <div
-                    class="text-wrapper-14"
-                    style="
+                  ">
+                <div class="text-wrapper-14" style="
                       margin: 0;
                       padding: 0;
                       border: 0;
@@ -2171,15 +1848,16 @@
                       letter-spacing: 0;
                       line-height: 36px;
                       white-space: nowrap;
-                    "
-                  >
-                    VISIT SITE
-                  </div>
+                    ">
+                
+                  VISIT SITE
                 </div>
               </div>
-              <p
-                class="sign-up-now-and"
-                style="
+            </div>
+          </a>
+
+
+            <p class="sign-up-now-and" style="
                   margin: 0;
                   padding: 0;
                   border: 0;
@@ -2198,11 +1876,8 @@
                   text-align: center;
                   letter-spacing: 0;
                   line-height: 40px;
-                "
-              >
-                <span
-                  class="text-wrapper-15"
-                  style="
+                ">
+              <span class="text-wrapper-15" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -2211,12 +1886,8 @@
                     -webkit-font-smoothing: antialiased;
                     box-sizing: border-box;
                     color: #e36c14;
-                  "
-                  >Sign up now<br style="-webkit-font-smoothing: antialiased; box-sizing: border-box"
-                /></span>
-                <span
-                  class="text-wrapper-16"
-                  style="
+                  ">Sign up now<br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
+              <span class="text-wrapper-16" style="
                     margin: 0;
                     padding: 0;
                     border: 0;
@@ -2226,15 +1897,15 @@
                     box-sizing: border-box;
                     color: #082f49;
                     font-size: 24px;
-                  "
-                  >and enjoy a summer of savings and peace of mind with Monjur!</span
-                >
-              </p>
-            </div>
+                  ">and enjoy a summer of savings and peace of mind with Monjur!</span>
+            </p>
           </div>
-        </td>
-        <td style="padding: 0px; width: 50%"></td>
-      </tr>
-    </table>
-  </body>
+        </div>
+      </td>
+      <td style="padding: 0px; width: 50%"></td>
+    </tr>
+  </table>
+</div>
+</body>
+
 </html>
