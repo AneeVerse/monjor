@@ -1,1911 +1,988 @@
-<!DOCTYPE html>
-<html style="
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    font-size: 100%;
-    -webkit-font-smoothing: antialiased;
-    box-sizing: border-box;
-    margin: 0px;
-    height: 100%;
-  ">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
-  <meta charset="utf-8" />
-  <style id="globals">
-    @import url("https://fonts.googleapis.com/css?family=Arimo:700,400");
-  </style>
+<!--[if gte mso 9]><xml>
+<o:OfficeDocumentSettings>
+<o:AllowPNG/>
+<o:PixelsPerInch>96</o:PixelsPerInch>
+</o:OfficeDocumentSettings>
+</xml><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="format-detection" content="telephone=no"> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+<!--[if !mso]><!-->
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+<!--<![endif]-->
+<title>Monjur</title>
+<!--[if !mso]>-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<!--<![endif]-->
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+/*////// RESET STYLES //////*/   
+#outlook a {padding:0;} /* Force Outlook to provide a "view in browser" menu link. */
+.ReadMsgBody{width:100%;}
+.ExternalClass {width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing.  */
+.yshortcuts a span {color: #e84d5c; border-bottom: none !important; background: none !important;}  
+.yshortcuts a {border-bottom: none !important;}
+body{
+  background-color: #ffffff;
+  width:100% !important;
+  height: 100% !important;
+  -webkit-font-smoothing: antialiased;
+  margin:0;
+  padding:0;
+}
+body, table, td, div, p, a, li, blockquote{-ms-text-size-adjust:100%; -webkit-text-size-adjust:100%;} /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */     
+h1, h2, h3, h4, h5, h6{margin:0; padding:0;}
+table { border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; }
+table td {border-collapse: collapse;}
+img {outline:none; text-decoration:none;border:none; -ms-interpolation-mode: bicubic; border: 0}
+p,a,li,td,blockquote{ mso-line-height-rule:exactly;}
+a[x-apple-data-detectors]{
+      color:inherit !important;
+      text-decoration:none !important;
+      font-size:inherit !important;
+      font-family:inherit !important;
+      font-weight:inherit !important;
+      line-height:inherit !important;
+}
+#bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+#templateContainer{width:600px;} 
+table[class=full] {
+  padding:0 !important;
+  border:none !important;
+  width: 100%; 
+}
+table td img[class=imgresponsive] {
+  width:100% !important;
+  height:auto !important;
+  display:block !important;
+}
 
-<style>
-  body, html {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-  }
-  .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-      background-color: #f0f0f0;
-  }
-  .box {
-      flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
-      margin: 10px;
-      padding: 20px;
-      
-      color: white;
-      text-align: center;
-  }
-  @media (max-width: 600px) {
-      .box {
-          flex: 1 1 100%; /* Full width for smaller screens */
-      }
-  }
+@media only screen and (max-width: 640px) {
+    #templateContainer{
+      max-width:600px !important;
+      width:100% !important;
+    }
+    a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color:inherit; /* or color whatever your want */
+    pointer-events: none;
+    cursor: default;
+    }
+    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+    text-decoration: none;
+    color:inherit !important;
+    pointer-events: auto;
+    cursor: default;
+    }
+    table[class=devicewidth] {
+     width:100% !important;
+    }
+    table[class=inner] {
+     width:100%!important;
+     text-align: center!important;
+    }
+}
+/*IPHONE STYLES*/
+@media only screen and (max-width: 480px) {
+    /* /\/\/\/\/\/\/ CLIENT-SPECIFIC MOBILE STYLES /\/\/\/\/\/\/ */
+    body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} /* Prevent Webkit platforms from changing default text sizes */
+    body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
+    #templateContainer{
+      max-width:600px !important;
+      width:100% !important;
+    }
+    a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color:inherit; /* or color whatever your want */
+    pointer-events: none;
+    cursor: default;
+    }
+    .mobile_link a[href^="tel"], .mobile_link a[href^="sms"] {
+    text-decoration: default;
+    color: #33b9ff !important; 
+    pointer-events: auto;
+    cursor: default;
+    }
+
+    .templateColumns {
+      max-width: 600px !important;
+      width: 100% !important;
+    }
+    .columnsContainer {
+      display: block!important;
+      max-width: 600px !important;
+      padding-bottom: 1px !important;
+      padding-left: 0 !important;
+      width: 100%!important;
+    }
+    .mcnBoxedTextContentContainer {
+      min-width: 100% !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .mcnTextContentContainer,.mcnCaptionBottomContent {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+}
 </style>
+<!--[if mso]>
+<style type=”text/css”>
+.bodyCell{
+  background-color: #ffffff;
+}
+.font-Arimo {
+  font-family: 'Arimo', sans-serif;
+}
+</style>
+<![endif]-->
 </head>
+<body style="background-color: #ffffff;-webkit-font-smoothing: antialiased;margin: 0;padding: 0;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;width: 100% !important;height: 100% !important;">
+<center>
+<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;margin: 0;padding: 0;height: 100% !important;width: 100% !important;">
+<tr>
+  <td align="center" valign="top" id="bodyCell" bgcolor="#ffffff" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;margin: 0;padding: 0;height: 100% !important;width: 100% !important;">
+      <!-- BEGIN TEMPLATE // -->
+      <!--[if (gte mso 9)|(IE)]>
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+        <tr>
+        <td align="center" valign="top" width="600" style="width:600px;">
+        <![endif]-->
+      <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 600px;"> 
 
-<body style="
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font: inherit;
-      font-size: 100%;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-      box-sizing: border-box;
-      margin: 0px;
-      height: 100%;
-    ">
+        <tr>
+          <td align="center" valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+            <!-- BEGIN LOGO // -->
 
-<div class="box">
-  <table border="0" cellpadding="0" cellspacing="0" class="frame" style="
-        border-collapse: separate;
-        padding: 0;
-        border: 0;
-        font: inherit;
-        font-size: 100%;
-        -webkit-font-smoothing: antialiased;
-        box-sizing: border-box;
-        background-color: #ffffff;
-        width: 100%;
-        height: 0px;
-      ">
-    <tr style="vertical-align: top">
-      <td style="padding: 0px; width: 50%"></td>
-      <td align="center" style="position: relative; width: 600px; height: 2947px">
-        <div class="overlap-wrapper" style="
-              margin: 0;
-              padding: 0;
-              border: 0;
-              font: inherit;
-              font-size: 100%;
-              -webkit-font-smoothing: antialiased;
-              box-sizing: border-box;
-              background-color: #ffffff;
-              overflow: hidden;
-              width: 600px;
-              height: 2947px;
-              text-align: left;
-            ">
-          <div class="overlap" style="
-                margin: 0;
-                padding: 0;
-                border: 0;
-                font: inherit;
-                font-size: 100%;
-                -webkit-font-smoothing: antialiased;
-                box-sizing: border-box;
-                position: relative;
-                width: 651px;
-                height: 3001px;
-                top: -31px;
-                left: -17px;
-                background: linear-gradient(180deg, rgb(217, 217, 217) 0%, rgb(255, 255, 255) 100%);
-              ">
-            <div class="overlap-group" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 554px;
-                  height: 752px;
-                  top: 175px;
-                  left: 40px;
-                ">
-              <div class="rectangle" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 524px;
-                    height: 752px;
-                    top: 0;
-                    left: 15px;
-                    background: linear-gradient(180deg, rgb(8, 47, 73) 0%, rgb(35, 78, 112) 88%);
-                  "></div>
-              <img class="settings" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/settings-6-1.png"
-                style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    width: 199px;
-                    height: 199px;
-                    top: 297px;
-                    left: 40px;
-                    position: absolute;
-                    mix-blend-mode: soft-light;
-                    object-fit: cover;
-                  " />
-              <img class="img" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/settings-6-2.png" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    width: 99px;
-                    height: 99px;
-                    top: 228px;
-                    left: 387px;
-                    position: absolute;
-                    mix-blend-mode: soft-light;
-                    object-fit: cover;
-                  " />
-              <img class="settings-2" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/settings-6-3.png"
-                style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    width: 191px;
-                    height: 191px;
-                    top: 346px;
-                    left: 321px;
-                    position: absolute;
-                    mix-blend-mode: soft-light;
-                    object-fit: cover;
-                  " />
-              <img class="sheet" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/sheet.png" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 221px;
-                    height: 270px;
-                    top: 222px;
-                    left: 138px;
-                  " />
-              <div class="div" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 554px;
-                    height: 277px;
-                    top: 445px;
-                    left: 0;
-                    background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "></div>
-              <p class="special-offer-no" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    top: 505px;
-                    left: 33px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 700;
-                    color: #ffffff;
-                    font-size: 28px;
-                    text-align: center;
-                    letter-spacing: 0;
-                    line-height: 36px;
-                  ">
-                Special Offer: <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />No Monthly
-                Fees All Summer Long!
-              </p>
-              <p class="summer-promotional" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 411px;
-                    top: 27px;
-                    left: 72px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 400;
-                    color: #ffffff;
-                    font-size: 20px;
-                    text-align: center;
-                    letter-spacing: 0;
-                    line-height: 28px;
-                  ">
-                Summer Promotional Campaign
-                <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />for Monjur's
-              </p>
-              <div class="text-wrapper" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    top: 99px;
-                    left: 77px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 700;
-                    color: #ffffff;
-                    font-size: 29px;
-                    text-align: center;
-                    letter-spacing: 0;
-                    line-height: normal;
-                    white-space: nowrap;
-                  ">
-                CONTRACTS-AS-A-SERVICE
-              </div>
-              <div class="text-wrapper-2" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    top: 123px;
-                    left: 72px;
-                    -webkit-text-stroke: 1px #ffffff;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 700;
-                    color: #e89611;
-                    font-size: 70px;
-                    text-align: center;
-                    letter-spacing: 0;
-                    line-height: normal;
-                    white-space: nowrap;
-                  ">
-                SOLUTIONS
-              </div>
-              <img class="rectangle-2"
-                src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/rectangle-38.png" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 223px;
-                    height: 19px;
-                    top: 464px;
-                    left: 156px;
-                  " />
-              <img class="rectangle-3"
-                src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/rectangle-39.png" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 200px;
-                    height: 19px;
-                    top: 464px;
-                    left: 347px;
-                  " />
-              <img class="group" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/group-8.png" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 330px;
-                    height: 217px;
-                    top: 266px;
-                    left: 112px;
-                  " />
-              <p class="p" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 464px;
-                    top: 584px;
-                    left: 42px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 400;
-                    color: #ffffff;
-                    font-size: 16px;
-                    text-align: center;
-                    letter-spacing: 0;
-                    line-height: 28px;
-                  ">
-                Monjur is excited to announce our exclusive summer promotional campaign for IT managed services
-                providers. Sign up for our Contracts-as-a-Service solutions and enjoy comprehensive legal protections
-                without any monthly fees for the entire summer.
-              </p>
-            </div>
-            <div class="overlap-2" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 539px;
-                  height: 327px;
-                  top: 2107px;
-                  left: 40px;
-                ">
-              <div class="rectangle-4" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 524px;
-                    height: 327px;
-                    top: 0;
-                    left: 15px;
-                    background: linear-gradient(180deg, rgb(8, 47, 73) 0%, rgb(35, 78, 112) 100%);
-                  "></div>
-              <div class="rectangle-5" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 94px;
-                    height: 279px;
-                    top: 25px;
-                    left: 0;
-                    background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "></div>
-              <p class="take-advantage-of" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 350px;
-                    top: 47px;
-                    left: 163px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 400;
-                    color: transparent;
-                    font-size: 22px;
-                    letter-spacing: 0;
-                    line-height: 32px;
-                  ">
-                <span class="span" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      color: #ffffff;
-                    ">Take advantage of this incredible offer and
-                </span>
-                <span class="text-wrapper-3" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                      color: #e89611;
-                    ">join the Monjur platform
-                </span>
-                <span class="span" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      color: #ffffff;
-                    ">with minimal risk. By the time you start making monthly payments, you'll already be benefiting
-                  from
-                  the comprehensive legal protections our platform provides.</span>
-              </p>
-              <img class="megaphone" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/megaphone.png"
-                style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 149px;
-                    height: 149px;
-                    top: 82px;
-                    left: 7px;
-                  " />
-            </div>
-            <div class="for-more-information-wrapper" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 524px;
-                  height: 112px;
-                  top: 2640px;
-                  left: 55px;
-                  background: linear-gradient(180deg, rgb(8, 47, 73) 0%, rgb(35, 78, 112) 100%);
-                ">
-              <p class="for-more-information" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    top: 21px;
-                    left: 36px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 700;
-                    color: #ffffff;
-                    font-size: 22px;
-                    text-align: center;
-                    letter-spacing: 0;
-                    line-height: 32px;
-                  ">
-                For more information and to enroll,
-                <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />visit our website or contact
-                our sales team.
-              </p>
-            </div>
-            <div class="overlap-3" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 257px;
-                  height: 184px;
-                  top: 1199px;
-                  left: 322px;
-                ">
-              <div class="rectangle-6" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 257px;
-                    height: 153px;
-                    top: 31px;
-                    left: 0;
-                    background-color: #082f49;
-                  "></div>
-              <div class="rectangle-7" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 57px;
-                    height: 56px;
-                    top: 0;
-                    left: 40px;
-                    background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "></div>
-              <p class="agreement-term" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 187px;
-                    top: 72px;
-                    left: 31px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 400;
-                    color: #ffffff;
-                    font-size: 22px;
-                    letter-spacing: 0;
-                    line-height: 30px;
-                  ">
-                <span class="text-wrapper-4" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                    ">Agreement Term:</span>
-                <span class="text-wrapper-5" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-family: 'Arimo', Helvetica;
-                      font-weight: 400;
-                      color: #ffffff;
-                      font-size: 22px;
-                      letter-spacing: 0;
-                      line-height: 30px;
-                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
-                <span class="text-wrapper-6" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-size: 18px;
-                    ">36 months</span>
-              </p>
-              <img class="signature" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/signature-1.png"
-                style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 32px;
-                    height: 32px;
-                    top: 12px;
-                    left: 52px;
-                    object-fit: cover;
-                  " />
-            </div>
-            <div class="overlap-4" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 539px;
-                  height: 153px;
-                  top: 1393px;
-                  left: 40px;
-                ">
-              <div class="rectangle-8" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 524px;
-                    height: 153px;
-                    top: 0;
-                    left: 15px;
-                    background-color: #082f49;
-                  "></div>
-              <div class="rectangle-9" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 109px;
-                    height: 112px;
-                    top: 21px;
-                    left: 0;
-                    background: linear-gradient(180deg, rgb(8, 47, 73) 0%, rgb(35, 78, 112) 100%);
-                  "></div>
-              <p class="monthly-fees-no" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 405px;
-                    top: 30px;
-                    left: 123px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 400;
-                    color: #ffffff;
-                    font-size: 22px;
-                    letter-spacing: 0;
-                    line-height: 30px;
-                  ">
-                <span class="text-wrapper-4" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                    ">Monthly Fees:</span>
-                <span class="text-wrapper-5" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-family: 'Arimo', Helvetica;
-                      font-weight: 400;
-                      color: #ffffff;
-                      font-size: 22px;
-                      letter-spacing: 0;
-                      line-height: 30px;
-                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
-                <span class="text-wrapper-6" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-size: 18px;
-                    ">No monthly fees during the summer. The earlier
-                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />you sign up, the more free
-                  months you receive!</span>
-              </p>
-              <div class="overlap-group-wrapper" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 33px;
-                    height: 34px;
-                    top: 57px;
-                    left: 39px;
-                  ">
-                <div class="overlap-5" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      position: relative;
-                      width: 34px;
-                      height: 37px;
-                      top: -1px;
-                      left: -1px;
-                    ">
-                  <img class="rectangle-10"
-                    src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/rectangle-30-1.png" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 33px;
-                        height: 33px;
-                        top: 4px;
-                        left: 0;
-                      " />
-                  <img class="vector" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-1-1.png"
-                    style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        left: 10px;
-                        position: absolute;
-                        width: 3px;
-                        height: 9px;
-                        top: 0;
-                      " />
-                  <img class="vector-2" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-2-1.png"
-                    style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        left: 15px;
-                        position: absolute;
-                        width: 3px;
-                        height: 9px;
-                        top: 0;
-                      " />
-                  <img class="vector-3" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-3-1.png"
-                    style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        left: 21px;
-                        position: absolute;
-                        width: 3px;
-                        height: 9px;
-                        top: 0;
-                      " />
-                  <div class="ellipse" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 21px;
-                        height: 21px;
-                        top: 16px;
-                        left: 14px;
-                        border-radius: 10.35px;
-                        border: 2.8px solid;
-                        border-color: #ffffff;
-                      "></div>
-                  <div class="ellipse-2" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 3px;
-                        height: 3px;
-                        top: 14px;
-                        left: 8px;
-                        background-color: #ffffff;
-                        border-radius: 1.34px;
-                      "></div>
-                  <div class="ellipse-3" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 3px;
-                        height: 3px;
-                        top: 19px;
-                        left: 8px;
-                        background-color: #ffffff;
-                        border-radius: 1.34px;
-                      "></div>
-                  <div class="ellipse-4" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 3px;
-                        height: 3px;
-                        top: 25px;
-                        left: 8px;
-                        background-color: #ffffff;
-                        border-radius: 1.34px;
-                      "></div>
-                  <div class="ellipse-5" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 3px;
-                        height: 3px;
-                        top: 14px;
-                        left: 13px;
-                        background-color: #ffffff;
-                        border-radius: 1.34px;
-                      "></div>
-                  <div class="text-wrapper-7" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 7px;
-                        top: 18px;
-                        left: 20px;
-                        font-family: 'Arimo', Helvetica;
-                        font-weight: 700;
-                        color: #ffffff;
-                        font-size: 14px;
-                        text-align: center;
-                        letter-spacing: 0;
-                        line-height: normal;
-                        white-space: nowrap;
-                      ">
-                    $
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="overlap-6" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 539px;
-                  height: 153px;
-                  top: 1556px;
-                  left: 40px;
-                ">
-              <div class="rectangle-11" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 524px;
-                    height: 153px;
-                    top: 0;
-                    left: 15px;
-                    background-color: #234e70;
-                  "></div>
-              <div class="rectangle-12" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 109px;
-                    height: 112px;
-                    top: 20px;
-                    left: 0;
-                    background: linear-gradient(180deg, rgb(35, 78, 112) 0%, rgb(55.18, 121.67, 174.25) 100%);
-                  "></div>
-              <p class="one-time-setup-fee" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 253px;
-                    top: 30px;
-                    left: 123px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 400;
-                    color: #ffffff;
-                    font-size: 22px;
-                    letter-spacing: 0;
-                    line-height: 30px;
-                  ">
-                <span class="text-wrapper-4" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                    ">One-Time Setup Fee:</span>
-                <span class="text-wrapper-5" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-family: 'Arimo', Helvetica;
-                      font-weight: 400;
-                      color: #ffffff;
-                      font-size: 22px;
-                      letter-spacing: 0;
-                      line-height: 30px;
-                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
-                <span class="text-wrapper-6" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-size: 18px;
-                    ">Essential Tier:
-                </span>
-                <span class="text-wrapper-8" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                      font-size: 18px;
-                    ">$299<br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
-                <span class="text-wrapper-6" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-size: 18px;
-                    ">Standard Tier:
-                </span>
-                <span class="text-wrapper-8" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                      font-size: 18px;
-                    ">$498</span>
-              </p>
-              <img class="calendar" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/calendar-6-1.png"
-                style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 31px;
-                    height: 31px;
-                    top: 60px;
-                    left: 39px;
-                    object-fit: cover;
-                  " />
-            </div>
-            <div class="overlap-7" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 539px;
-                  height: 153px;
-                  top: 1719px;
-                  left: 40px;
-                ">
-              <div class="rectangle-13" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 524px;
-                    height: 153px;
-                    top: 0;
-                    left: 15px;
-                    background-color: #5c6670;
-                  "></div>
-              <div class="rectangle-14" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 109px;
-                    height: 112px;
-                    top: 22px;
-                    left: 0;
-                    background: linear-gradient(180deg, rgb(92, 102, 112) 0%, rgb(166, 174.37, 182.75) 100%);
-                  "></div>
-              <p class="monthly-payments" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 416px;
-                    top: 30px;
-                    left: 123px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 400;
-                    color: #ffffff;
-                    font-size: 22px;
-                    letter-spacing: 0;
-                    line-height: 30px;
-                  ">
-                <span class="text-wrapper-4" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                    ">Monthly Payments:</span>
-                <span class="text-wrapper-5" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-family: 'Arimo', Helvetica;
-                      font-weight: 400;
-                      color: #ffffff;
-                      font-size: 22px;
-                      letter-spacing: 0;
-                      line-height: 30px;
-                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
-                <span class="text-wrapper-6" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-size: 18px;
-                    ">Begin after Labor Day, with 33 monthly payments
-                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />starting the day after
-                  Labor Day.</span>
-              </p>
-              <div class="div-wrapper" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 33px;
-                    height: 34px;
-                    top: 61px;
-                    left: 38px;
-                  ">
-                <div class="overlap-5" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      position: relative;
-                      width: 34px;
-                      height: 37px;
-                      top: -1px;
-                      left: -1px;
-                    ">
-                  <img class="rectangle-10"
-                    src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/rectangle-30-1.png" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 33px;
-                        height: 33px;
-                        top: 4px;
-                        left: 0;
-                      " />
-                  <img class="vector" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-1-1.png"
-                    style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        left: 10px;
-                        position: absolute;
-                        width: 3px;
-                        height: 9px;
-                        top: 0;
-                      " />
-                  <img class="vector-2" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-2-1.png"
-                    style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        left: 15px;
-                        position: absolute;
-                        width: 3px;
-                        height: 9px;
-                        top: 0;
-                      " />
-                  <img class="vector-3" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/vector-3-1.png"
-                    style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        left: 21px;
-                        position: absolute;
-                        width: 3px;
-                        height: 9px;
-                        top: 0;
-                      " />
-                  <div class="ellipse" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 21px;
-                        height: 21px;
-                        top: 16px;
-                        left: 14px;
-                        border-radius: 10.35px;
-                        border: 2.8px solid;
-                        border-color: #ffffff;
-                      "></div>
-                  <div class="ellipse-2" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 3px;
-                        height: 3px;
-                        top: 14px;
-                        left: 8px;
-                        background-color: #ffffff;
-                        border-radius: 1.34px;
-                      "></div>
-                  <div class="ellipse-3" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 3px;
-                        height: 3px;
-                        top: 19px;
-                        left: 8px;
-                        background-color: #ffffff;
-                        border-radius: 1.34px;
-                      "></div>
-                  <div class="ellipse-4" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 3px;
-                        height: 3px;
-                        top: 25px;
-                        left: 8px;
-                        background-color: #ffffff;
-                        border-radius: 1.34px;
-                      "></div>
-                  <div class="ellipse-5" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 3px;
-                        height: 3px;
-                        top: 14px;
-                        left: 13px;
-                        background-color: #ffffff;
-                        border-radius: 1.34px;
-                      "></div>
-                  <div class="text-wrapper-7" style="
-                        margin: 0;
-                        padding: 0;
-                        border: 0;
-                        font: inherit;
-                        font-size: 100%;
-                        -webkit-font-smoothing: antialiased;
-                        box-sizing: border-box;
-                        position: absolute;
-                        width: 7px;
-                        top: 18px;
-                        left: 20px;
-                        font-family: 'Arimo', Helvetica;
-                        font-weight: 700;
-                        color: #ffffff;
-                        font-size: 14px;
-                        text-align: center;
-                        letter-spacing: 0;
-                        line-height: normal;
-                        white-space: nowrap;
-                      ">
-                    $
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="overlap-8" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 539px;
-                  height: 153px;
-                  top: 1882px;
-                  left: 40px;
-                ">
-              <div class="rectangle-15" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 524px;
-                    height: 153px;
-                    top: 0;
-                    left: 15px;
-                    background-color: #e89611;
-                  "></div>
-              <div class="rectangle-16" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 109px;
-                    height: 112px;
-                    top: 22px;
-                    left: 0;
-                    background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(255, 216.03, 115.81) 100%);
-                  "></div>
-              <p class="money-back-guarantee" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 368px;
-                    top: 30px;
-                    left: 123px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 400;
-                    color: #ffffff;
-                    font-size: 22px;
-                    letter-spacing: 0;
-                    line-height: 30px;
-                  ">
-                <span class="text-wrapper-4" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                    ">Money-Back Guarantee:</span>
-                <span class="text-wrapper-5" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-family: 'Arimo', Helvetica;
-                      font-weight: 400;
-                      color: #ffffff;
-                      font-size: 22px;
-                      letter-spacing: 0;
-                      line-height: 30px;
-                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
-                <span class="text-wrapper-6" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-size: 18px;
-                    ">Not satisfied within the first 90 days? You can
-                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />cancel, no questions
-                  asked.</span>
-              </p>
-              <img class="refund" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/refund-1.png" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 36px;
-                    height: 36px;
-                    top: 61px;
-                    left: 35px;
-                    object-fit: cover;
-                  " />
-            </div>
-            <div class="overlap-9" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 257px;
-                  height: 184px;
-                  top: 1199px;
-                  left: 55px;
-                ">
-              <div class="rectangle-6" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 257px;
-                    height: 153px;
-                    top: 31px;
-                    left: 0;
-                    background-color: #082f49;
-                  "></div>
-              <div class="rectangle-17" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 57px;
-                    height: 56px;
-                    top: 0;
-                    left: 43px;
-                    background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  "></div>
-              <p class="promotion-period" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 204px;
-                    top: 72px;
-                    left: 32px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 400;
-                    color: #ffffff;
-                    font-size: 22px;
-                    letter-spacing: 0;
-                    line-height: 30px;
-                  ">
-                <span class="text-wrapper-4" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-weight: 700;
-                    ">Promotion Period:</span>
-                <span class="text-wrapper-6" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      font-size: 18px;
-                    "> <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />Memorial Day through
-                  <br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" />Labor Day</span>
-              </p>
-              <img class="calendar-2" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/calendar-5-1.png"
-                style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    width: 34px;
-                    height: 34px;
-                    top: 11px;
-                    left: 54px;
-                    object-fit: cover;
-                  " />
-            </div>
-            <div class="rectangle-18" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 524px;
-                  height: 4px;
-                  top: 2752px;
-                  left: 55px;
-                  background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                "></div>
-            <img class="monjur-logo" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/monjur-logo-1.png"
-              style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 210px;
-                  height: 105px;
-                  top: 53px;
-                  left: 47px;
-                  object-fit: cover;
-                " />
-
-                <a href="https://monjur.com" target="_blank">
-            <div class="group-2" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 139px;
-                  height: 48px;
-                  top: 83px;
-                  left: 442px;
-                ">
-              <div class="overlap-group-2" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: relative;
-                    width: 137px;
-                    height: 48px;
-                    background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  ">
-                <div class="text-wrapper-9" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      position: absolute;
-                      top: 6px;
-                      left: 23px;
-                      font-family: 'Arimo', Helvetica;
-                      font-weight: 700;
-                      color: #ffffff;
-                      font-size: 18px;
-                      text-align: center;
-                      letter-spacing: 0;
-                      line-height: 36px;
-                      white-space: nowrap;
-                    ">
-                  VISIT SITE
-                </div>
-              </div>
-            </div></a>
-
-            <a href="https://monjur.com/request-a-demo/" target="_blank">
-            <div class="overlap-10" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 214px;
-                  height: 56px;
-                  top: 979px;
-                  left: 202px;
-                  background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                ">
-              <div class="text-wrapper-10" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: absolute;
-                    top: 9px;
-                    left: 26px;
-                    font-family: 'Arimo', Helvetica;
-                    font-weight: 700;
-                    color: #ffffff;
-                    font-size: 18px;
-                    text-align: center;
-                    letter-spacing: 0;
-                    line-height: 36px;
-                    white-space: nowrap;
-                  ">
-                SAVE ON MONJUR
-              </div>
-            </div>
-          </a>
-            <p class="text-wrapper-11" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 453px;
-                  top: 1080px;
-                  left: 87px;
-                  font-family: 'Arimo', Helvetica;
-                  font-weight: 700;
-                  color: #082f49;
-                  font-size: 28px;
-                  text-align: center;
-                  letter-spacing: 0;
-                  line-height: 40px;
-                ">
-              Here are the key details of this limited-time offer:
-            </p>
-            <p class="monjur-reserve" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  top: 2897px;
-                  left: 71px;
-                  font-family: 'Arimo', Helvetica;
-                  font-weight: 400;
-                  color: transparent;
-                  font-size: 13px;
-                  text-align: center;
-                  letter-spacing: 0;
-                  line-height: 22px;
-                ">
-              <span class="text-wrapper-12" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    color: #082f49;
-                  ">Monjur, 550 Reserve Street, Ste. 190 PMB 80, Southlake, Texas 76092, United States<br
-                  style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
-              <span class="text-wrapper-13" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    color: #234e70;
-                  "> <a class="hubspot-mergetag" data-unsubscribe="true" target="_blank" style="mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:12px; color:#1274e5; font-weight:normal; text-decoration:underline; font-style:normal" data-hs-link-id="0" href="https://hs-22570801.s.hubspotemail.net/hs/preferences-center/en/direct?data=W2nXS-N30h-G8W1V1cqy1X9LTDW3V_rL64tgMp0W2FLfSW23kfv-W2-bmlf3VJfkKW30jNfk3f_7w4W383tqK3ZsJ_tW4hGkml2HZ991W1Svt8J4p9mFQW2FYsRx2Tv0WYW329yTV49JGsqW1W_PX-2RyWjFW2-MhGZ2vXJ4zW2CWgBl3j5HdNW3R2kY92PkfXqW3BPZ_v2WpC9XW41D4VM3K8MctW3GVz4W30jP13W2WKfVR36pbVBW21kZgB3g999rW3h-vny24RPlFW2HqpsC211bcMW3NSgrM2KzWk2W1BgV1q4chLBtW2MTyp32RN-ptW3_rdPz3djShqW3LGyrN3B_QjkW4mnm_V2vzywWW36tlLN2zDT7TW3NPnwZ4hmxt4W32Gj2m3ZCyTmW1V1C6s2r8-y5W2p6L6Q2-p-PGW21nT7M2Wrc_6f45P8FX04">
-                    Unsubscribe 
-                  
-                  </a>
-                  &nbsp;  &nbsp;
-                  <a class="hubspot-mergetag" data-unsubscribe="true" target="_blank" style="mso-line-height-rule:exactly; font-family:Arial, sans-serif; font-size:12px; color:#1274e5; font-weight:normal; text-decoration:underline; font-style:normal" data-hs-link-id="0" href="https://hs-22570801.s.hubspotemail.net/hs/preferences-center/en/page?data=W2nXS-N30h-GfW2-syw332hSbrW1XpsSG3BV_xyW2sN8s643qpz3W1Z0TPg3W2Qz0W36d5qP366H6cW3FgcRJ2RHCZNW2p9Cl-49M6bXW3_Nck92zTPmjW4mCtDb239NSWW1NwFSd30mjnkW32gzZS4hKDn-W1_kLwC2RvcDZW2t50712RRWTZW3JGkP94htKZgW2t2wXs3gwWsrW2PLLK62nT_XnW2PMWF_2WFVgHW2PRFYm2-ljLFW1NCDS73SzMJmW1Nppbz2qWPM0W3NDD7S3Vx4sCW2Yt9891Qm6stW4mGMqZ3_YP3JW1_4qqb1LnqgQW2Ry6863GZjxZW1Sx5YB3JKB1JW34mP7D2pbq7JW4kHqv-2HDHnmW47sVfC2t2-BfW3W14pF2q-zp-W2RxGzN3jgNN-W328LVF4frvq0W2w5b2X36zqMyf3QJ-Bw04">
-                  Manage preferences
-                </a>
-               </span>
-            </p>
-
-            
-            <a href="https://monjur.com" target="_blank">
-            <div class="group-3" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 216px;
-                  height: 48px;
-                  top: 2803px;
-                  left: 202px;
-                ">
-              <div class="overlap-11" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    position: relative;
-                    width: 214px;
-                    height: 48px;
-                    background: linear-gradient(180deg, rgb(232, 150, 17) 0%, rgb(227, 108, 20) 100%);
-                  ">
-                <div class="text-wrapper-14" style="
-                      margin: 0;
-                      padding: 0;
-                      border: 0;
-                      font: inherit;
-                      font-size: 100%;
-                      -webkit-font-smoothing: antialiased;
-                      box-sizing: border-box;
-                      position: absolute;
-                      top: 6px;
-                      left: 62px;
-                      font-family: 'Arimo', Helvetica;
-                      font-weight: 700;
-                      color: #ffffff;
-                      font-size: 18px;
-                      text-align: center;
-                      letter-spacing: 0;
-                      line-height: 36px;
-                      white-space: nowrap;
-                    ">
+              <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#DADADA" style="width:100%; background-color:#DADADA;">
+              <tr>
+              <![endif]-->
                 
-                  VISIT SITE
-                </div>
-              </div>
-            </div>
-          </a>
+              <!--[if mso]>
+              <td align="center" valign="top" width="600" bgcolor="#DADADA" style="width:600px; background-color:#DADADA;">
+              <![endif]-->
 
+              <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#ffffff" style="background-color: #DADADA;max-width: 100%;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+               <tbody>
+                <tr>
+                  <td width="35" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="middle" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                        <td align="left" valign="middle" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: left;font-size: 32px;font-weight: bold;color: #141A46;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                         <a href="https://monjur.com/" target="_blank" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;"><img src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/d4105cb3-56bc-63a7-f835-d003e737988a.png" width="200" height="104" alt="Monjur" style="max-width: 200px;outline: none;text-decoration: none;border: 0;-ms-interpolation-mode: bicubic;"></a>
+                        </td>
+                        <td align="right" valign="middle" style="text-align: right;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <a class="font-Arimo" href="https://monjur.com/" style="font-family: 'Arimo', sans-serif;font-size: 18px;font-weight: 700;background: #E68013;border: 2px solid #E68013;text-decoration: none;padding: 10px 15px;color: #fff;border-radius: 0px;display: inline-block;mso-padding-alt: 0;text-underline-color: #ff0000;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;"><!--[if mso]><i style="letter-spacing: 15px;mso-font-width:-100%;mso-text-raise:15pt" hidden>&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;">VISIT SITE</span><!--[if mso]><i style="letter-spacing: 15px;mso-font-width:-100%" hidden>&nbsp;</i><![endif]--></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </td>
+                 <td width="35" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+               </tbody>
+              </table>
 
-            <p class="sign-up-now-and" style="
-                  margin: 0;
-                  padding: 0;
-                  border: 0;
-                  font: inherit;
-                  font-size: 100%;
-                  -webkit-font-smoothing: antialiased;
-                  box-sizing: border-box;
-                  position: absolute;
-                  width: 456px;
-                  top: 2476px;
-                  left: 89px;
-                  font-family: 'Arimo', Helvetica;
-                  font-weight: 700;
-                  color: transparent;
-                  font-size: 44px;
-                  text-align: center;
-                  letter-spacing: 0;
-                  line-height: 40px;
-                ">
-              <span class="text-wrapper-15" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    color: #e36c14;
-                  ">Sign up now<br style="-webkit-font-smoothing: antialiased; box-sizing: border-box" /></span>
-              <span class="text-wrapper-16" style="
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    font: inherit;
-                    font-size: 100%;
-                    -webkit-font-smoothing: antialiased;
-                    box-sizing: border-box;
-                    color: #082f49;
-                    font-size: 24px;
-                  ">and enjoy a summer of savings and peace of mind with Monjur!</span>
-            </p>
-          </div>
-        </div>
-      </td>
-      <td style="padding: 0px; width: 50%"></td>
-    </tr>
-  </table>
-</div>
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+
+            <!-- // END LOGO -->
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center" valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+            <!-- BEGIN TOP BANNER // -->
+
+              <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%"  bgcolor="#DADADA" style="width:100%; background-color:#DADADA;">
+              <tr>
+              <![endif]-->
+                
+              <!--[if mso]>
+              <td align="center" valign="top" width="600" bgcolor="#DADADA" style="width:600px; background-color:#DADADA;">
+              <![endif]-->
+
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+              <tbody>
+                <tr>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="top" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                        <td style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                         <img class="imgresponsive" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/9560db0d-f5b5-ce5f-a883-4ce393e01216.png" width="560" height="759" alt="" style="max-width: 600px;outline: none;text-decoration: none;border: 0;-ms-interpolation-mode: bicubic;width: 100% !important;height: auto !important;display: block !important;">
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </td>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+                </tbody>
+              </table>
+
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+
+            <!-- // END TOP BANNER -->
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center" valign="top" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+           <!-- BEGIN ROW 01 // -->
+           <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%"  bgcolor="#DADADA" style="width:100%; background-color:#DADADA">
+                <tr>
+                <![endif]-->
+                  
+                <!--[if mso]>
+                <td align="center" valign="top" width="600"  bgcolor="#DADADA" style="width:600px; background-color:#DADADA">
+                <![endif]-->
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+              <tbody>
+                <tr>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="top" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                        <td height="40" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <a class="font-Arimo" href="https://monjur.com/request-a-demo/" style="font-family: 'Arimo', sans-serif;font-size: 18px;font-weight: 700;background: #E68013;border: 2px solid #E68013;text-decoration: none;padding: 10px 20px;color: #fff;border-radius: 0px;display: inline-block;mso-padding-alt: 0;text-underline-color: #ff0000;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;"><!--[if mso]><i style="letter-spacing: 15px;mso-font-width:-100%;mso-text-raise:15pt" hidden>&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;">SAVE ON MONJUR</span><!--[if mso]><i style="letter-spacing: 15px;mso-font-width:-100%" hidden>&nbsp;</i><![endif]--></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="30" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td valign="top" align="center" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: center;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <div style="color: #082f49;font-weight: 700;font-size: 28px;line-height: 34px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Here are the key details of this<br> limited-time offer:</div>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td height="30" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </td>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+                </tbody>
+              </table>
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+           <!-- // END ROW 01 -->
+           </td>
+         </tr>
+
+      <tr>
+        <td align="center" valign="top" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+          <!-- BEGIN ROW 02// -->
+          <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%"  bgcolor="#DADADA" style="width:100%; background-color:#DADADA">
+              <tr>
+              <![endif]-->
+              <!--[if mso]>
+              <td align="center" valign="top" width="600" bgcolor="#DADADA" style="width:600px; background-color:#DADADA">
+              <![endif]-->
+              <table border="0" cellpadding="0" cellspacing="0" width="600" class="templateColumns" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                <tr>
+                  <td width="12" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                      <tbody>
+                        <tr>
+                          <td valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                              <tbody>
+                                <tr>
+                                  <td align="left" valign="top" class="columnsContainer" width="50%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tr>
+                                        <td valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                            <tbody>
+                                              <tr>
+                                                <td valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td valign="top" width="288" style="padding: 0 8px 0 8px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;"> <img class="imgresponsive" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/b92c0441-f9e0-8f6e-2301-e501f10c4878.png" width="273" height="200" alt="Promotion Period:Ends on June 30" label="" style="outline: none;text-decoration: none;border: 0;-ms-interpolation-mode: bicubic;width: 100% !important;height: auto !important;display: block !important;"> </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td height="20" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td align="left" valign="top" class="columnsContainer" width="50%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumn" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                      <tr>
+                                        <td valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                            <tbody>
+                                              <tr>
+                                                <td valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="mcnCaptionBottomContent" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+                                                    <tbody>
+                                                      <tr>
+                                                        <td valign="top" width="288" style="padding: 0 8px 0 8px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                                                            <tbody>
+                                                              <tr>
+                                                                <td valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;"> <img class="imgresponsive" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/e6248f96-25dc-2c58-a1fe-b1f046f76869.png" width="273" height="200" alt="Agreement Term:36 months" label="" style="outline: none;text-decoration: none;border: 0;-ms-interpolation-mode: bicubic;width: 100% !important;height: auto !important;display: block !important;"> </td>
+                                                              </tr>
+                                                              <tr>
+                                                                <td height="20" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                                                              </tr>
+                                                            </tbody>
+                                                          </table>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                  <td width="12" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+              </table>
+            <!--[if mso]>
+            </td>
+            <![endif]-->
+            <!--[if mso]>
+            </tr>
+            </table>
+            <![endif]-->
+            <!-- // END ROW 02-->
+            </td>
+          </tr>
+
+          <tr>
+          <td align="center" valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+            <!-- BEGIN ROW 03 // -->
+
+              <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#DADADA" style="width:100%; background-color:#DADADA;">
+              <tr>
+              <![endif]-->
+                
+              <!--[if mso]>
+              <td align="center" valign="top" width="600" bgcolor="#DADADA" style="width:600px; background-color:#DADADA;">
+              <![endif]-->
+
+              <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#ffffff" style="background-color: #DADADA;max-width: 100%;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+               <tbody>
+                <tr>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="middle" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                        <td width="120" align="left" valign="middle" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                         <img class="imgresponsive" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/ed3e1f93-2f78-dc68-3667-65ac6054ccc5.png" width="120" height="157" alt="" style="min-width: 120px;outline: none;text-decoration: none;border: 0;-ms-interpolation-mode: bicubic;width: 100% !important;height: auto !important;display: block !important;">
+                        </td>
+                        <td width="440" align="left" valign="middle" bgcolor="#082F49" style="background-color: #082F49;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="full" bgcolor="#082F49" style="background-color: #082F49;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                            <tbody>
+                              <tr>
+                                <td height="15" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="left" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: left;color: #ffffff;font-weight: 700;font-size: 20px;line-height: 26px;padding-right: 10px;padding-left: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    Monthly Fees: 
+                                  </td>
+                                 </tr>
+                                 <tr>
+                                  <td align="left" class="font-Arimo" style="font-family: 'Arimo', sans-serif;color: #ffffff;font-weight: 400;font-size: 18px;line-height: 26px;padding-right: 10px;padding-left: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    No monthly fees during the summer. The earlier you sign up, the more free months you receive! 
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </td>
+                 <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3" height="20" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+               </tbody>
+              </table>
+
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+
+            <!-- // END ROW 03 -->
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center" valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+            <!-- BEGIN ROW 04 // -->
+
+              <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#DADADA" style="width:100%; background-color:#DADADA;">
+              <tr>
+              <![endif]-->
+                
+              <!--[if mso]>
+              <td align="center" valign="top" width="600" bgcolor="#DADADA" style="width:600px; background-color:#DADADA;">
+              <![endif]-->
+
+              <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#ffffff" style="background-color: #DADADA;max-width: 100%;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+               <tbody>
+                <tr>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="middle" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                        <td width="120" align="left" valign="middle" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                         <img class="imgresponsive" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/ce42b00d-2719-6b86-f79a-0639ff762151.png" width="120" height="157" alt="" style="min-width: 120px;outline: none;text-decoration: none;border: 0;-ms-interpolation-mode: bicubic;width: 100% !important;height: auto !important;display: block !important;">
+                        </td>
+                        <td width="440" align="left" valign="middle" bgcolor="#234E70" style="background-color: #234E70;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="full" bgcolor="#234E70" style="background-color: #234E70;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                            <tbody>
+                              <tr>
+                                <td height="15" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="left" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: left;color: #ffffff;font-weight: 700;font-size: 20px;line-height: 26px;padding-right: 10px;padding-left: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    One-Time Setup Fee: 
+                                  </td>
+                                 </tr>
+                                 <tr>
+                                  <td align="left" class="font-Arimo" style="font-family: 'Arimo', sans-serif;color: #ffffff;font-weight: 400;font-size: 18px;line-height: 26px;padding-right: 10px;padding-left: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    Essential Tier: $299<br>Standard Tier: $498  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </td>
+                 <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3" height="20" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+               </tbody>
+              </table>
+
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+
+            <!-- // END ROW 04 -->
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center" valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+            <!-- BEGIN ROW 05 // -->
+
+              <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#DADADA" style="width:100%; background-color:#DADADA;">
+              <tr>
+              <![endif]-->
+                
+              <!--[if mso]>
+              <td align="center" valign="top" width="600" bgcolor="#DADADA" style="width:600px; background-color:#DADADA;">
+              <![endif]-->
+
+              <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#ffffff" style="background-color: #DADADA;max-width: 100%;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+               <tbody>
+                <tr>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="middle" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                        <td width="120" align="left" valign="middle" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                         <img class="imgresponsive" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/61ac1b0f-a3c7-9ee7-e00c-5e6ab81a6c41.png" width="120" height="157" alt="" style="min-width: 120px;outline: none;text-decoration: none;border: 0;-ms-interpolation-mode: bicubic;width: 100% !important;height: auto !important;display: block !important;">
+                        </td>
+                        <td width="440" align="left" valign="middle" bgcolor="#5C6670" style="background-color: #5C6670;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="full" bgcolor="#5C6670" style="background-color: #5C6670;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                            <tbody>
+                              <tr>
+                                <td height="15" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="left" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: left;color: #ffffff;font-weight: 700;font-size: 20px;line-height: 26px;padding-right: 10px;padding-left: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    Monthly Payments: 
+                                  </td>
+                                 </tr>
+                                 <tr>
+                                  <td align="left" class="font-Arimo" style="font-family: 'Arimo', sans-serif;color: #ffffff;font-weight: 400;font-size: 18px;line-height: 26px;padding-right: 10px;padding-left: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    Begin after Labor Day, with 33 monthly payments starting the day after Labor Day.  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </td>
+                 <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3" height="20" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+               </tbody>
+              </table>
+
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+
+            <!-- // END ROW 05 -->
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center" valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+            <!-- BEGIN ROW 06 // -->
+
+              <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" bgcolor="#DADADA" style="width:100%; background-color:#DADADA;">
+              <tr>
+              <![endif]-->
+                
+              <!--[if mso]>
+              <td align="center" valign="top" width="600" bgcolor="#DADADA" style="width:600px; background-color:#DADADA;">
+              <![endif]-->
+
+              <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#ffffff" style="background-color: #DADADA;max-width: 100%;min-width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+               <tbody>
+                <tr>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="middle" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                        <td width="120" align="left" valign="middle" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                         <img class="imgresponsive" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/9fdbdb32-34bc-ed40-7ec3-e1ac540ebe53.png" width="120" height="157" alt="" style="min-width: 120px;outline: none;text-decoration: none;border: 0;-ms-interpolation-mode: bicubic;width: 100% !important;height: auto !important;display: block !important;">
+                        </td>
+                        <td width="440" align="left" valign="middle" bgcolor="#E89611" style="background-color: #E89611;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="full" bgcolor="#E89611" style="background-color: #E89611;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                            <tbody>
+                              <tr>
+                                <td height="15" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                <td align="left" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: left;color: #ffffff;font-weight: 700;font-size: 20px;line-height: 26px;padding-right: 10px;padding-left: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    Satisfaction Guarantee:  
+                                  </td>
+                                 </tr>
+                                 <tr>
+                                  <td align="left" class="font-Arimo" style="font-family: 'Arimo', sans-serif;color: #ffffff;font-weight: 400;font-size: 18px;line-height: 26px;padding-right: 10px;padding-left: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                    Not satisfied within the first 90 days? You can cancel, no questions asked.  
+                                </td>
+                              </tr>
+                              <tr>
+                                <td height="15" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </td>
+                 <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3" height="20" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+               </tbody>
+              </table>
+
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+
+            <!-- // END ROW 06 -->
+          </td>
+        </tr>
+
+         
+             <tr>
+              <td align="center" valign="top" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+               <!-- BEGIN ROW 05 // -->
+               <!--[if mso]>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%"  bgcolor="#DADADA" style="width:100%; background-color:#DADADA">
+                    <tr>
+                    <![endif]-->
+                      
+                    <!--[if mso]>
+                    <td align="center" valign="top" width="600"  bgcolor="#DADADA" style="width:600px; background-color:#DADADA">
+                    <![endif]-->
+
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                  <tbody>
+                    <tr>
+                      <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      <td valign="top" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                         <tbody>
+                          <tr>
+                            <td valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                <a href="#" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;"><img class="imgresponsive" src="https://raw.githubusercontent.com/AneeVerse/monjor/main/img/8390c589-44d6-914b-22f7-f493b5b923c1.png" width="560" height="338" alt="" label="" style="max-width: 570px;outline: none;text-decoration: none;border: 0;-ms-interpolation-mode: bicubic;width: 100% !important;height: auto !important;display: block !important;"></a>
+                             </td>
+                          </tr>
+                          
+                          <tr>
+                            <td height="20" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                        </td>
+                      <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                  </table>
+                  <!--[if mso]>
+                  </td>
+                  <![endif]-->
+                          
+                  <!--[if mso]>
+                  </tr>
+                  </table>
+                  <![endif]-->
+               <!-- // END ROW 05 -->
+               </td>
+             </tr>
+
+         <tr>
+          <td align="center" valign="top" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+           <!-- BEGIN ROW 06 // -->
+           <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%"  bgcolor="#DADADA" style="width:100%; background-color:#DADADA">
+              <tr>
+              <![endif]-->
+                
+              <!--[if mso]>
+              <td align="center" valign="top" width="600"  bgcolor="#DADADA" style="width:600px; background-color:#DADADA">
+              <![endif]-->
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+              <tbody>
+                <tr>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="top" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                          <td height="20" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: center;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                            <span style="color:#e36c14; font-weight: 700; font-size:44px; line-height: 50px;">Sign up now</span>
+                        </td>
+                      </tr>
+                      <tr>
+                          <td height="20" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: center;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <span style="color:#082f49; font-weight: 700; font-size:24px; line-height: 30px;">
+                            and enjoy a summer of savings and<br>peace of mind with Monjur! 
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="40" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </td>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+                </tbody>
+              </table>
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+           <!-- // END ROW 06 -->
+           </td>
+          </tr>
+
+          <tr>
+          <td align="center" valign="top" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+           <!-- BEGIN ROW 07 // -->
+           <!--[if mso]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%"  bgcolor="#DADADA" style="width:100%; background-color:#DADADA">
+              <tr>
+              <![endif]-->
+                
+              <!--[if mso]>
+              <td align="center" valign="top" width="600"  bgcolor="#DADADA" style="width:600px; background-color:#DADADA">
+              <![endif]-->
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+              <tbody>
+                <tr>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="top" align="center" bgcolor="#0E3652" style="background-color: #0E3652;border-bottom: 1px solid #E57C13;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#0E3652" style="background-color: #0E3652;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                          <td height="20" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: center;padding-left: 10px;padding-right: 10px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                            <span style="color:#ffffff; font-weight: 700; font-size:22px; line-height: 28px;">For more information and to enroll,<br>visit our website or contact our sales team.</span>
+                        </td>
+                      </tr>
+                      <tr style="border-bottom:3px solid #E57C13;">
+                          <td height="20" style="line-height: 0px;font-size: 1px;display: block;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </td>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+                </tbody>
+              </table>
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+           <!-- // END ROW 07 -->
+           </td>
+          </tr>
+
+          <tr>
+          <td align="center" valign="top" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+           <!-- BEGIN ROW 08 // -->
+           <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%"  bgcolor="#DADADA" style="width:100%; background-color:#DADADA">
+                <tr>
+                <![endif]-->
+                  
+                <!--[if mso]>
+                <td align="center" valign="top" width="600"  bgcolor="#DADADA" style="width:600px; background-color:#DADADA">
+                <![endif]-->
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+              <tbody>
+                <tr>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                  <td valign="top" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                     <tbody>
+                      <tr>
+                        <td height="40" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td align="center" valign="top" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <a class="font-Arimo" href="https://monjur.com/" style="font-family: 'Arimo', sans-serif;font-size: 18px;font-weight: 700;background: #E68013;border: 2px solid #E68013;text-decoration: none;padding: 10px 40px;color: #fff;border-radius: 0px;display: inline-block;mso-padding-alt: 0;text-underline-color: #ff0000;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;"><!--[if mso]><i style="letter-spacing: 15px;mso-font-width:-100%;mso-text-raise:15pt" hidden>&nbsp;</i><![endif]--><span style="mso-text-raise:10pt;">VISIT SITE</span><!--[if mso]><i style="letter-spacing: 15px;mso-font-width:-100%" hidden>&nbsp;</i><![endif]--></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td height="10" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </td>
+                  <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                </tr>
+                </tbody>
+              </table>
+              <!--[if mso]>
+              </td>
+              <![endif]-->
+                      
+              <!--[if mso]>
+              </tr>
+              </table>
+              <![endif]-->
+           <!-- // END ROW 08 -->
+           </td>
+         </tr>
+
+              <tr>
+                <td align="center" valign="top" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                 <!-- BEGIN DOWN FOOTER // -->
+                 <!--[if mso]>
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" style="width:100%;">
+                    <tr>
+                    <![endif]-->
+                      
+                    <!--[if mso]>
+                    <td align="center" valign="top" width="600" style="width:600px;">
+                    <![endif]-->
+                  <table width="100%" border="0" cellspacing="0" cellpadding="3" class="full" bgcolor="#DADADA" style="background-color: #DADADA;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                    <tbody>
+                       <tr>
+                        <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                        <td valign="top" align="center" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0" class="full" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;width: 100%;padding: 0 !important;border: none !important;">
+                           <tbody>
+                            <tr>
+                                <td height="20" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td align="center" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: center;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                  <span style="color:#082f49; font-weight: 400; font-size:13px; line-height: 18px;">
+                                    {{ site_settings.company_name }},&nbsp;
+                                    {{ site_settings.company_street_address_1 }},&nbsp;
+                                    {{ site_settings.company_street_address_2 }},&nbsp;
+                                    {{ site_settings.company_city }},&nbsp;
+                                    {{ site_settings.company_state }},&nbsp;
+                                    {{ site_settings.company_zip }},&nbsp;
+                                    {{ site_settings.company_country }}&nbsp;
+                                  </span>
+                              </td>
+                            </tr>
+                            <tr>
+                                <td height="10" style="line-height: 0px;font-size: 1px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td align="center" class="font-Arimo" style="font-family: 'Arimo', sans-serif;text-align: center;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">
+                                <span style="color:#234e70; font-weight: 400; font-size:13px; line-height: 18px;">
+                                  <a style="text-decoration: none;color: #234e70;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;" class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link }}">Manage preferences</a> | <a style="text-decoration: none;color: #234e70;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;" class="hubspot-mergetag" data-unsubscribe="true" href="{{ unsubscribe_link_all }}">Unsubscribe</a> 
+                                </span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td height="20" style="line-height: 0px;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                            </tr>
+                            </tbody>
+                          </table>
+                          </td>
+                        <td width="20" class="sidespace" style="-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;mso-line-height-rule: exactly;border-collapse: collapse;">&nbsp;</td>
+                       </tr>
+                    </tbody>
+                  </table>
+                  <!--[if mso]>
+                    </td>
+                    <![endif]-->
+                            
+                    <!--[if mso]>
+                    </tr>
+                    </table>
+                    <![endif]-->
+                 <!-- // END DOWN FOOTER -->
+                 </td>
+              </tr>
+          </table>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+          <!-- // END TEMPLATE -->
+    </td>
+  </tr>
+</table>
+</center>
 </body>
-
 </html>
